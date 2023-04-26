@@ -19,7 +19,11 @@
   <h1>Tari si diviziunile lor</h1>
   <form>
     <h3>Statele Unite</h3>
-    <select>
+    <select
+      name="stateleUnite"
+      id="stateleUnite"
+      required
+    >
       <option value="">--selecteaza--</option>
       <option value="alabama">Alabama</option>
       <option value="arkansas">Arkansas</option>
@@ -27,10 +31,39 @@
       <option value="newYork">New York</option>
       <option value="boston">Boston</option>
     </select>
+    <br>
+
+    <h3>Canada</h3>
+    <select
+      name="canada"
+      id="canada"
+      required
+    >
+      <option value="">--selecteaza--</option>
+      <option value="quebec">Quebec</option>
+      <option
+        value="ontario"
+        selected
+      >Ontario</option>
+      <option value="newBrunswick">New Brunswick</option>
+    </select>
+    <br>
+
+    <h3>Europa</h3>
+    <select
+      name="europa"
+      id="europa"
+      required
+    >
+      <option value="">--selecteaza--</option>
+      <option value="romania">Romania</option>
+      <option value="bukgaria">Bulgaria</option>
+      <option value="mareaBritanie">Marea Britanie</option>
+    </select>
+    <br>
     <hr>
-
+    <button type="submit">Submit</button>
   </form>
-
 
   <div
     class="pixeltab-host"

@@ -1,4 +1,47 @@
 .container {
-  border: 1px solid #000; 
+  border: 1px solid #000;
   padding: 5px;
+  position: relative;
+}
+
+/* aici, la nav-top imi spune ca a aparut eroare si sa contactez classroom */
+.nav-top {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: black;
+  color: white;
+  z-index: 1;
+}
+.nav-top a {
+  color: white;
+}
+
+.section-title {
+  text-align: center;
+  background-color: white;
+  position: sticky;
+  top: 8px;
+  z-index: 1;
+}
+
+.legend {
+  position: absolute;
+  background-color: gray;
+  border: solid red;
+  margin-left: 0;
+  margin-top: 0;
+}
+
+.sub {
+  position: relative;
+  bottom: 5px;
+}
+
+.nav-bottom {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  background-color: green;
+  z-index: 1;
 }

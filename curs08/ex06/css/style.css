@@ -30,7 +30,7 @@
   width: 500px;
   height: 220px;
   border: 1px solid black;
-  margin: 20px 0px;
+  margin: 20px auto;
   padding: 15px;
   box-shadow: 15px 15px 2px gray;
 }
@@ -53,10 +53,9 @@
 
 .transparent {
   /* nu recunoaste margin */
-  margin: 0 auto;
+  margin: 20px auto;
   width: 550px;
   border: 2px solid red;
   box-shadow: 10px 10px 5px gray;
   padding: 20px;
-  margin: 20px 0px;
 }

@@ -45,3 +45,7 @@
   background-color: green;
   z-index: 1;
 }
+
+.nav-bottom a {
+  color: white;
+}

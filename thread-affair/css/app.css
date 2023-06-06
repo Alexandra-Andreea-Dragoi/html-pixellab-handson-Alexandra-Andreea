@@ -247,4 +247,250 @@ table {
 body {
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
+  color: #707070;
 }
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.container {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1278px;
+}
+
+/* header */
+.header {
+  margin: 30px auto;
+}
+
+.header-secondary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-contact li {
+  display: inline-block;
+}
+
+.header-contact a i[class*='fa-'] {
+  /* pentru Dragos/ aici nu imi schimba daca pun i.fa-solid fa-phone in loc de i[class*='fa-'] */
+
+  /* pentru Alexandra/ best practice / i-ul a carei clasa incepe cu 'fa-' i[class*='fa-'] indiferent ce alta iconita din FontAwesome am pune in locul ei, o va recunoaste si nu vor influenta proprietatile unui alt <i></i> care ar putea sa apara, ulterior, in ancora headerului contact.  */
+
+  color: #ff6b6b;
+  font-size: 24px;
+  margin-right: 8px;
+  position: relative;
+  bottom: -4px;
+}
+.header-controls ul {
+  display: flex;
+  gap: 40px;
+}
+
+.header-account a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.header-cart {
+  display: inline-flex;
+  align-items: center;
+}
+
+.header-cart i:first-child {
+  color: #000;
+  font-size: 32px;
+}
+
+.header-cart a {
+  position: relative;
+}
+
+.header-cart .cart-qty {
+  background: #ff6b6b;
+  color: #fff;
+  font-size: 700;
+  height: 21px;
+  padding: 0 8px;
+  border-radius: 24px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  /* pozitionarea in coltul caruciorului: */
+  position: absolute;
+  top: -10px;
+  left: 24px;
+  /* asta nu functioneaza daca nu punem relative pe parinte adica pe ancora / adaugam .headre-cart a / daca nu punem, arunca cerculetul rosu in coltul din stanga sus a ecranului pentru ca se raporteaza la body */
+}
+
+.header-account .icon {
+  font-size: 20px;
+}
+
+.header-primary {
+  text-align: center;
+}
+
+.nav-primary {
+  margin-bottom: 16px;
+}
+
+.nav-primary li {
+  display: inline-flex;
+  margin: 0 12px;
+}
+
+.nav-primary a {
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 300;
+  padding: 12px 24px;
+  display: inline-block;
+  border-radius: 36px;
+}
+
+.nav-primary a:hover {
+  background: #ff6b6b;
+  color: #fff;
+  transition: color 0.2 liniar, background-color 0.2s liniar;
+}
+
+.nav-secondary {
+  text-align: center;
+}
+
+.nav-secondary li {
+  display: inline-flex;
+  margin: 0 16px;
+}
+
+/* header */
+
+/* footer */
+.footer-primary {
+  background: #1b1927 url(../images/banners/banner-06.jpg) no-repeat right
+    center / 477px;
+  margin-bottom: 16px;
+  text-transform: uppercase;
+  padding: 50px;
+  color: #aeaeae;
+  font-weight: 300;
+}
+
+.footer-menu ul {
+  width: 128px;
+}
+
+.footer-menu li {
+  margin-bottom: 8px;
+}
+
+.footer-menu {
+  display: flex;
+  gap: 60px;
+  margin-bottom: 40px;
+}
+
+.footer-support {
+  display: inline-block;
+  margin-right: 136px;
+}
+
+.footer-support ul {
+  display: flex;
+  gap: 36px;
+  text-align: center;
+}
+
+.footer-support [class*='fa-'] {
+  color: #ff6b6b;
+  font-size: 36px;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.footer-support a {
+  display: block;
+}
+/* ca sa sune si de pe text */
+
+.footer-contact {
+  display: inline-block;
+  vertical-align: bottom;
+}
+
+.footer-contact ul {
+  display: flex;
+}
+
+.footer-contact h1 {
+  margin-bottom: 8px;
+}
+
+.footer-contact h1 span {
+  font-weight: 500;
+  color: #fff;
+}
+
+.footer-contact p {
+  text-transform: initial;
+  line-height: 22px;
+}
+
+.footer-contact a[href*='mailto'] {
+  color: #ff6b6b;
+}
+
+.footer-secondary {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.footer-secondary p {
+  margin-bottom: 8px;
+}
+
+.footer-secondary p img {
+  vertical-align: bottom;
+}
+
+/* footer */
+
+/* homepage */
+/* pus de mine deocamdata */
+.content-main {
+  margin-bottom: 128px;
+}
+
+.content-main section header {
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+/* not good practice to write long selector!! */
+.content-main section header h1 {
+  font-size: 40px;
+  color: #292929;
+}
+
+.content-main section header h1 span {
+  font-weight: 500;
+}
+
+.home-payment ul {
+  display: flex;
+  width: 320px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+}
+
+/* homepage */

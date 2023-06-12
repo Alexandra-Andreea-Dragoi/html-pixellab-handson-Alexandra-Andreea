@@ -531,6 +531,11 @@ a {
   transition: background-color 0.2s liniar color 0.2s liniar;
 }
 
+.banner-main .banner-cta:hover {
+  color: #fff;
+  background: #ff6b6b;
+}
+
 .banner-main .banner-main-inner .banner-top a {
   margin: 0 auto;
 }
@@ -578,11 +583,16 @@ a {
   margin-bottom: 16px;
 }
 
-.content-main .home-banner-secondary h1 ~ h2 {
+.content-main .home-banner-secondary h1 ~ p {
   text-transform: uppercase;
   font-size: 18px;
   color: #fff;
   text-align: end;
+  font-weight: 300;
+}
+
+.content-main .home-banner-secondary h1 ~ p > a > span {
+  font-weight: 700;
 }
 
 .home-social ul {

@@ -279,6 +279,8 @@ a {
 .header-contact a i[class*='fa-'] {
   /* pentru Dragos/ aici nu imi schimba daca pun i.fa-solid fa-phone in loc de i[class*='fa-'] */
 
+  /* pentru Alexandra era i.fa-solid.fa-phone */
+
   /* pentru Alexandra/ best practice / i-ul a carei clasa incepe cu 'fa-' i[class*='fa-'] indiferent ce alta iconita din FontAwesome am pune in locul ei, o va recunoaste si nu vor influenta proprietatile unui alt <i></i> care ar putea sa apara, ulterior, in ancora headerului contact.  */
 
   color: #ff6b6b;
@@ -463,25 +465,83 @@ a {
 /* footer */
 
 /* homepage */
-/* pus de mine deocamdata */
-.content-main {
-  margin-bottom: 128px;
+
+.banner-main {
+  height: 572px;
+  background: #000 url(../images/banners/banner-01.jpg) no-repeat center center /
+    cover;
+  color: #fff;
+  margin-bottom: 96px;
 }
 
-.content-main section header {
+.banner-main .banner-main-inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  padding-left: 50px;
+  position: relative;
+}
+
+.banner-main .banner-copy {
+  position: absolute;
+  bottom: 18px;
+  left: 50px;
+  line-height: 22px;
+  font-weight: 300;
+}
+
+.content-main > section {
+  margin-bottom: 64px;
+}
+
+.content-main > section > header {
   font-weight: 300;
   text-align: center;
   margin-bottom: 50px;
 }
 
+.banner-top {
+  display: flex;
+  flex-direction: column;
+}
+
+.banner-main .banner-main-inner div > h1 {
+  font-size: 75px;
+  font-weight: bold;
+}
+
+.banner-main .banner-main-inner div > h1 ~ h2 {
+  font-size: 42px;
+  font-weight: 300;
+  margin-bottom: 42px;
+}
+
+.banner-main .banner-cta {
+  background: none;
+  border: 1px solid #ff6b6b;
+  cursor: pointer;
+  border-radius: 40px;
+  font-size: 20px;
+  padding: 24px 40px;
+  text-transform: uppercase;
+  color: #ff6b6b;
+  transition: background-color 0.2s liniar, color 0.2s liniar;
+}
+
 /* not good practice to write long selector!! */
-.content-main section header h1 {
+.content-main > section > header > h1 {
   font-size: 40px;
   color: #292929;
 }
 
-.content-main section header h1 span {
+.content-main > section > header > h1 span {
   font-weight: 500;
+}
+
+.content-main > section > header > p {
+  line-height: 24px;
+  margin-top: 16px;
 }
 
 .home-payment ul {
@@ -493,4 +553,138 @@ a {
   gap: 8px;
 }
 
+.home-banner-secondary {
+  height: 236px;
+  background: #000 url(../images/banners/banner-04.jpg) no-repeat center;
+  margin-bottom: 42px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-right: 64px;
+}
+
+.content-main .home-banner-secondary h1 {
+  text-transform: uppercase;
+  font-size: 26px;
+  font-weight: 700;
+  color: #fff;
+  text-align: end;
+  margin-bottom: 16px;
+}
+
+.content-main .home-banner-secondary h1 ~ h2 {
+  text-transform: uppercase;
+  font-size: 18px;
+  color: #fff;
+  text-align: end;
+}
+
+.home-social ul {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  color: #5e5e5e;
+  font-size: 24px;
+}
+
+.home-social a {
+  display: inline-flex;
+  border: 2px solid #5e5e5e;
+  border-radius: 50%;
+  width: 64px;
+  aspect-ratio: 1;
+  justify-content: center;
+  align-items: center;
+}
+
 /* homepage */
+
+/* catalog */
+
+.catalog-preview .product-tiles {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 42px;
+}
+
+.catalog-preview .catalog-cta {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 300;
+  text-transform: lowercase;
+}
+
+.product-tile {
+  text-align: center;
+  font-weight: 300;
+  font-size: 18px;
+}
+
+.product-tile .product-tile-header {
+  margin-bottom: 18px;
+}
+
+.product-tile .product-tile-image {
+  display: block;
+  margin-bottom: 30px;
+}
+
+.product-tile .product-tile-image img {
+  width: 100%;
+}
+
+.product-tile .product-tile-title {
+  font-size: 24px;
+}
+.product-tile .product-tile-image {
+  width: 100%;
+}
+
+.product-tile .product-tile-title span {
+  font-weight: 500;
+}
+
+.product-tile .product-tile-title span:nth-child(1) {
+  color: #000;
+}
+
+.product-tile .product-tile-subtitle {
+  line-height: 22px;
+}
+
+.product-tile .product-tile-pricing {
+  line-height: 29px;
+  margin-bottom: 18px;
+}
+
+.product-tile .product-catalog-price {
+  display: block;
+  text-decoration: line-through;
+}
+
+.product-tile .product-price {
+  font-size: 24px;
+}
+
+.product-tile .product-price span {
+  color: #ff6b6b;
+  font-weight: 500;
+}
+
+.product-tile .product-a2c {
+  background: none;
+  border: 1px solid #ff6b6b;
+  cursor: pointer;
+  border-radius: 24px;
+  font-size: 16px;
+  padding: 10px 19px;
+  text-transform: uppercase;
+  color: #ff6b6b;
+  transition: background-color 0.2s liniar, color 0.2s liniar;
+}
+
+.product-tile .product-a2c:hover {
+  color: #fff;
+  background: #ff6b6b;
+}
+/* catalog */

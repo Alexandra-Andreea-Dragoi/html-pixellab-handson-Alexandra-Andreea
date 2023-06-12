@@ -481,6 +481,7 @@ a {
   height: 100%;
   padding-left: 50px;
   position: relative;
+  align-items: flex-start;
 }
 
 .banner-main .banner-copy {
@@ -504,9 +505,10 @@ a {
 .banner-top {
   display: flex;
   flex-direction: column;
+  text-align: center;
 }
 
-.banner-main .banner-main-inner div > h1 {
+.banner-main .banner-main-inner .banner-top > h1 {
   font-size: 75px;
   font-weight: bold;
 }
@@ -526,7 +528,11 @@ a {
   padding: 24px 40px;
   text-transform: uppercase;
   color: #ff6b6b;
-  transition: background-color 0.2s liniar, color 0.2s liniar;
+  transition: background-color 0.2s liniar color 0.2s liniar;
+}
+
+.banner-main .banner-main-inner .banner-top a {
+  margin: 0 auto;
 }
 
 /* not good practice to write long selector!! */

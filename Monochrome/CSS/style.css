@@ -281,8 +281,10 @@ a {
 .header .header-main {
   display: flex;
   justify-content: center;
-  gap: 236px;
+  gap: 200px;
 }
+
+/* mai incerc aici */
 
 .header .header-main .header-main-contact li,
 .header .header-main .header-main-controls li {

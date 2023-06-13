@@ -257,3 +257,53 @@ table {
   font-display: swap;
 }
 /* fonts end */
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 22px;
+}
+
+.container {
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Header Start */
+.header {
+  background: #111 url(../Images/banner.png) no-repeat center center;
+  height: 500px;
+}
+
+.header .header-main {
+  display: flex;
+  justify-content: center;
+  gap: 236px;
+}
+
+.header .header-main .header-main-contact li,
+.header .header-main .header-main-controls li {
+  display: inline-flex;
+  flex-direction: row;
+  padding: 12px;
+  margin-top: 38px;
+}
+
+.header .header-main .header-main-contact li > a {
+  color: #fff;
+  font-size: 16px;
+  font-family: 'PlayfairDisplay-Regular', sans-serif;
+  font-weight: 500;
+}
+
+.header .header-main .header-main-controls li > a {
+  color: #111;
+  font-size: 16px;
+  font-family: 'PlayfairDisplay-Regular', sans-serif;
+  font-weight: 500;
+}
+
+/* Header End */

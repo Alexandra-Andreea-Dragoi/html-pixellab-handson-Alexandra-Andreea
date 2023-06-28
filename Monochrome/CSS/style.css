@@ -1,4 +1,4 @@
-/* http://meyerweb.com/eric/tools/css/reset/
+/* /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -257,55 +257,350 @@ table {
   font-display: swap;
 }
 /* fonts end */
+
 body {
   font-family: 'Roboto', sans-serif;
   font-size: 22px;
+  color: #2b2b2b;
 }
 
-.container {
-  width: 100%;
-  max-width: 1920px;
-  margin: 0 auto;
+h1 {
+  font-family: 'PlayfairDisplay-Regular', sans-serif;
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  color: #2b2b2b;
 }
 
 a {
   text-decoration: none;
+  font-family: 'PlayfairDisplay-Regular', sans-serif;
+  color: #2b2b2b;
+}
+
+a:visited {
+  color: #2b2b2b;
+}
+
+a:hover {
+  scale: 1.1;
+}
+
+span {
+  font-family: 'PlayfairDisplay-Regular', sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+}
+
+.container {
+  width: 100%;
+  max-width: 1366px;
+  margin: 0 auto;
+}
+
+.separator {
+  width: auto;
+  border: 1px solid #ccc;
+  margin: 40px 0;
+}
+
+.cta {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.cta-btn {
+  font-size: 22px;
+  background: transparent;
+  padding: 16px 24px;
+}
+
+.cta-btn:hover {
+  background: #2b2b2b;
+  color: #ebebeb;
 }
 
 /* Header Start */
 .header {
-  background: #111 url(../Images/banner.png) no-repeat center center;
-  height: 500px;
+  background: transparent url(../Images/banner.png) no-repeat center center /
+    cover;
+  height: 700px;
 }
 
 .header .header-main {
   display: flex;
-  justify-content: center;
-  gap: 200px;
+  justify-content: space-between;
 }
 
-/* mai incerc aici */
-
-.header .header-main .header-main-contact li,
-.header .header-main .header-main-controls li {
-  display: inline-flex;
+.header .header-main .header-main-contact ul,
+.header .header-main .header-main-controls ul {
+  display: flex;
   flex-direction: row;
-  padding: 12px;
+  justify-content: space-between;
+  width: 400px;
   margin-top: 38px;
+}
+
+.header .header-main .header-main-contact li > a,
+.header .header-main .header-main-controls li > a {
+  font-family: 'PlayfairDisplay-Regular', sans-serif;
+  font-weight: 500;
 }
 
 .header .header-main .header-main-contact li > a {
   color: #fff;
   font-size: 16px;
-  font-family: 'PlayfairDisplay-Regular', sans-serif;
-  font-weight: 500;
 }
 
 .header .header-main .header-main-controls li > a {
   color: #111;
-  font-size: 16px;
+}
+
+.header-main .header-main-search {
+  border: 1px solid #111;
+  padding: 4px 6px;
+}
+
+.header-main .header-main-search i {
+  font-size: 18px;
+}
+
+.header-main .header-main-search input {
+  border: transparent;
+  font-size: 18px;
+  line-height: 20px;
+}
+/* Header End */
+
+/* Menu Start */
+.menu {
+  background: #2b2b2b;
+}
+
+.menu .menu-items ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+
+.menu .menu-items ul > li > a {
+  color: #fff;
   font-family: 'PlayfairDisplay-Regular', sans-serif;
+  text-transform: uppercase;
+  font-weight: 100;
+  font-size: 18px;
+  line-height: 22px;
+}
+/* Menu End */
+
+/* Main Start */
+
+/* Catalog New Stuff and Most Loved start */
+.catalog-new-stuff-tiles ul,
+.catalog-most-loved-tiles ul {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.catalog-new-stuff-tiles li,
+.catalog-most-loved-tiles li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.catalog-new-stuff-img img,
+.catalog-most-loved-img img {
+  width: 310px;
+  height: 292px;
+}
+
+.catalog-new-stuff-watch-name,
+.catalog-most-loved-watch-name {
+  text-transform: uppercase;
+  font-family: 'PlayfairDisplay-Regular', sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  margin-top: 24px;
+}
+
+.catalog-new-stuff-tiles ul span,
+.catalog-most-loved-tiles ul span {
+  margin-top: 24px;
+}
+
+.catalog-new-stuff-img,
+.catalog-most-loved-img {
+  position: relative;
+}
+
+.catalog-new-stuff-img .fa-regular,
+.catalog-most-loved-img .fa-regular {
+  position: absolute;
+  z-index: 1;
+  top: 10%;
+  right: 10%;
+  color: #b5b4b4;
+}
+
+.catalog-new-stuff-img i:hover,
+.catalog-most-loved-img i:hover {
+  scale: 1.2;
+  color: rgb(0, 0, 0);
+}
+
+.catalog-new-stuff-img img:hover,
+.catalog-most-loved-img img:hover {
+  scale: 1.1;
+}
+/* Catalog New Stuff and Most Loved end */
+
+/* Avertising start */
+.advertising {
+  margin-top: 120px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.advertising-image img {
+  width: 600px;
+  height: 600px;
+}
+
+.advertising-title {
+  margin-bottom: 40px;
   font-weight: 500;
 }
 
-/* Header End */
+.advertising-text {
+  width: 600px;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.advertising-text p {
+  font-weight: 300;
+  line-height: 40px;
+  text-align: justify;
+}
+/* Advertisisng end */
+
+/* Catalog Men and Women start */
+.catalog-men-title h1,
+.catalog-women-title h1 {
+  text-transform: uppercase;
+}
+
+.catalog-men-tiles ul,
+.catalog-women-tiles ul {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.catalog-men-tiles li,
+.catalog-women-tiles li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.catalog-men-img img,
+.catalog-women-img img {
+  width: 310px;
+  height: 292px;
+}
+
+.catalog-men-watch-name,
+.catalog-women-watch-name {
+  text-transform: uppercase;
+  font-family: 'PlayfairDisplay-Regular', sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  margin-top: 24px;
+}
+
+.catalog-men-tiles ul span,
+.catalog-women-tiles ul span {
+  margin-top: 24px;
+}
+
+.catalog-men-img,
+.catalog-women-img {
+  position: relative;
+}
+
+.catalog-men-img .fa-regular,
+.catalog-women-img .fa-regular {
+  position: absolute;
+  z-index: 1;
+  top: 10%;
+  right: 10%;
+  color: #b5b4b4;
+}
+
+.catalog-men-img i:hover,
+.catalog-women-img i:hover {
+  scale: 1.2;
+  color: rgb(0, 0, 0);
+}
+
+.catalog-men-img img:hover,
+.catalog-women-img img:hover {
+  scale: 1.1;
+}
+/* Catalog Men and Women end */
+
+/* Main End */
+
+/* Footer Start */
+.footer {
+  margin-top: 80px;
+  background: #ebebeb no-repeat center center / cover;
+}
+
+.footer-content {
+  padding: 20px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-family: 'PlayfairDisplay-Regular', sans-serif;
+}
+
+.footer-support,
+.footer-information,
+.footer-about-us,
+.footer-media {
+  line-height: 40px;
+}
+
+/* Footer Media Start */
+.footer-media {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 10px;
+}
+
+.footer-media .footer-media-social {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.footer-media input {
+  width: 100%;
+}
+
+/* Footer Media End */
+
+/* Footer End */

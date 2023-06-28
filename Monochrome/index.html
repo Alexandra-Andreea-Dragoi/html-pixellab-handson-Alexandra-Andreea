@@ -30,9 +30,9 @@
 
 <body>
   <!-- ./header start -->
-  <header class="header container">
+  <header class="header">
     <!-- ./header-main start -->
-    <section class="header-main">
+    <section class="header-main container">
       <!-- ./header-main-contact start -->
       <div class="header-main-contact">
         <ul>
@@ -99,9 +99,9 @@
         <ul>
           <li>
             <form class="header-main-search">
-              <!-- <label for="search">
+              <label for="search">
                 <i class="fa-solid fa-magnifying-glass"></i>
-              </label> -->
+              </label>
               <input
                 type="text"
                 id="search"
@@ -114,30 +114,24 @@
           <li>
             <a
               href="/"
-              target="_blank"
-              rel="noopener noreferrer"
               title="User"
             >
-              <i class="fa-regular fa-user"></i>
+              <i class="fa-solid fa-user"></i>
             </a>
           </li>
 
           <li>
             <a
               href="/"
-              target="_blank"
-              rel="noopener noreferrer"
               title="Favorites"
             >
-              <i class="fa-regular fa-heart"></i>
+              <i class="fa-solid fa-heart"></i>
             </a>
           </li>
 
           <li>
             <a
               href="/"
-              target="_blank"
-              rel="noopener noreferrer"
               title="Shopping Bag"
             >
               <i class="fa-solid fa-bag-shopping"></i>
@@ -154,49 +148,51 @@
 
   <!-- ./menu start -->
   <section class="menu">
-    <ul>
-      <li>
-        <a
-          href="/"
-          title="New Arrivals"
-        >New Arrivals</a>
-      </li>
+    <div class="menu-items container">
+      <ul>
+        <li>
+          <a
+            href="#catalog-new-stuff"
+            title="New Arrivals"
+          >New Arrivals</a>
+        </li>
 
-      <li>
-        <a
-          href="/"
-          title="Brands"
-        >Brands</a>
-      </li>
+        <li>
+          <a
+            href="/"
+            title="Brands"
+          >Brands</a>
+        </li>
 
-      <li>
-        <a
-          href="/"
-          title="Men's"
-        >Men's</a>
-      </li>
+        <li>
+          <a
+            href="#catalog-men"
+            title="Men's"
+          >Men's</a>
+        </li>
 
-      <li>
-        <a
-          href="/"
-          title="Women's"
-        >Women's</a>
-      </li>
+        <li>
+          <a
+            href="#catalog-women"
+            title="Women's"
+          >Women's</a>
+        </li>
 
-      <li>
-        <a
-          href="/"
-          title="Accesories"
-        >Accesories</a>
-      </li>
+        <li>
+          <a
+            href="/"
+            title="Accesories"
+          >Accesories</a>
+        </li>
 
-      <li>
-        <a
-          href="/"
-          title="Lookbook"
-        >Lookbook</a>
-      </li>
-    </ul>
+        <li>
+          <a
+            href="/"
+            title="Lookbook"
+          >Lookbook</a>
+        </li>
+      </ul>
+    </div>
   </section>
   <!-- ./menue end -->
 
@@ -204,73 +200,126 @@
   <!-- ./main start -->
   <main>
     <!-- ./catalog-new-stuff start -->
-    <section class="catalog-new-stuff container">
+    <section
+      class="catalog-new-stuff container"
+      id="catalog-new-stuff"
+    >
+      <div class="separator"></div>
       <header class="catalog-new-stuff-title">
         <h1>New Stuff</h1>
       </header>
 
       <div class="catalog-new-stuff-tiles">
         <ul>
-          <!-- <li>
-            <picture>
+          <li>
+            <picture class="catalog-new-stuff-img">
               <a
                 href="/"
-                title="Watch Dark Black Male"
+                title="heart"
               >
-                <img
-                  src="./Images/Waches/WatchDarkBlack-Male-02 2@2x.png"
-                  alt="Watch Dark Black Male"
-                >
+                <i class="fa-regular fa-heart"></i>
               </a>
+
+              <img
+                src="./Images/Waches/WatchDarkBlack-Male-02 2@2x.png"
+                alt="Watch Dark Black Male"
+              >
             </picture>
 
-            <h1 class="catalog-new-stuff-title">
+            <h1 class="catalog-new-stuff-watch-name">
               <a
                 href="/"
                 title="Monochrome Watch"
               >Monochrome</a>
             </h1>
 
-            <span>
+            <span class="price">
               $425
             </span>
-          </li> -->
-
-          <li>
-            <a
-              href="/"
-              title=""
-            >
-              <img
-                src=""
-                alt=""
-              >
-            </a>
           </li>
 
           <li>
-            <a
-              href="/"
-              title=""
-            >
-              <img
-                src=""
-                alt=""
+            <picture class="catalog-new-stuff-img">
+              <a
+                href="/"
+                title="heart"
               >
-            </a>
+                <i class="fa-regular fa-heart"></i>
+              </a>
+
+              <img
+                src="./Images/Waches/WatchWhiteRound-Female-02 2@2x.png"
+                alt="Watch White Round Female"
+              >
+            </picture>
+
+            <h1 class="catalog-new-stuff-watch-name">
+              <a
+                href="/"
+                title="Monochrome Watch"
+              >Monochrome</a>
+            </h1>
+
+            <span class="price">
+              $425
+            </span>
           </li>
 
           <li>
-            <a
-              href="/"
-              title=""
-            >
-              <img
-                src=""
-                alt=""
+            <picture class="catalog-new-stuff-img">
+              <a
+                href="/"
+                title="heart"
               >
-            </a>
+                <i class="fa-regular fa-heart"></i>
+              </a>
+
+              <img
+                src="./Images/Waches/WatchLightBlack-Male-01 2@2x.png"
+                alt="Watch Light Black Male"
+              >
+            </picture>
+
+            <h1 class="catalog-new-stuff-watch-name">
+              <a
+                href="/"
+                title="Monochrome Watch"
+              >Monochrome</a>
+            </h1>
+
+            <span class="price">
+              $425
+            </span>
           </li>
+
+          <li>
+            <picture class="catalog-new-stuff-img">
+              <a
+                href="/"
+                title="heart"
+              >
+                <i class="fa-regular fa-heart"></i>
+              </a>
+
+              <img
+                src="./Images/Waches/WatchWhiteSquare-Female-01 2@2x.png"
+                alt="Watch White Square Female"
+              >
+            </picture>
+
+            <h1 class="catalog-new-stuff-watch-name">
+              <a
+                href="/"
+                title="Monochrome Watch"
+              >Monochrome</a>
+            </h1>
+
+            <span class="price">
+              $425
+            </span>
+          </li>
+
+
         </ul>
       </div>
     </section>
@@ -278,29 +327,420 @@
 
 
     <!-- ./catalog-most-loved start -->
-    <section class="catalog-most-loved">
+    <section class="catalog-most-loved container">
+      <div class="separator"></div>
+      <header class="catalog-most-loved-title">
+        <h1>Most Loved</h1>
+      </header>
 
+      <div class="catalog-most-loved-tiles">
+        <ul>
+          <li>
+            <picture class="catalog-most-loved-img">
+              <a
+                href="/"
+                title="heart"
+              >
+                <i class="fa-regular fa-heart"></i>
+              </a>
+
+              <img
+                src="./Images/Waches/WatchWhiteSquare-Female-01 2@2x.png"
+                alt="Watch White Square Female"
+              >
+            </picture>
+
+            <h1 class="catalog-most-loved-watch-name">
+              <a
+                href="/"
+                title="Monochrome Watch"
+              >Monochrome</a>
+            </h1>
+
+            <span class="price">
+              $425
+            </span>
+          </li>
+
+          <li>
+            <picture class="catalog-most-loved-img">
+              <a
+                href="/"
+                title="heart"
+              >
+                <i class="fa-regular fa-heart"></i>
+              </a>
+
+              <img
+                src="./Images/Waches/WatchDarkBlack-Male-02 2@2x.png"
+                alt="Watch Dark Black Male"
+              >
+            </picture>
+
+            <h1 class="catalog-most-loved-watch-name">
+              <a
+                href="/"
+                title="Monochrome Watch"
+              >Monochrome</a>
+            </h1>
+
+            <span class="price">
+              $425
+            </span>
+          </li>
+
+          <li>
+            <picture class="catalog-most-loved-img">
+              <a
+                href="/"
+                title="heart"
+              >
+                <i class="fa-regular fa-heart"></i>
+              </a>
+
+              <img
+                src="./Images/Waches/WatchLightBlack-Male-01 2@2x.png"
+                alt="Watch Light Black Male"
+              >
+            </picture>
+
+            <h1 class="catalog-most-loved-watch-name">
+              <a
+                href="/"
+                title="Monochrome Watch"
+              >Monochrome</a>
+            </h1>
+
+            <span class="price">
+              $425
+            </span>
+          </li>
+
+          <li>
+            <picture class="catalog-most-loved-img">
+              <a
+                href="/"
+                title="heart"
+              >
+                <i class="fa-regular fa-heart"></i>
+              </a>
+
+              <img
+                src="./Images/Waches/WatchBlackSilver-Male-03 2@2x.png"
+                alt="Watch Black Silver Male"
+              >
+            </picture>
+
+            <h1 class="catalog-most-loved-watch-name">
+              <a
+                href="/"
+                title="Monochrome Watch"
+              >Monochrome</a>
+            </h1>
+
+            <span class="price">
+              $425
+            </span>
+          </li>
+
+
+        </ul>
+      </div>
     </section>
     <!-- ./catalog-most-loved end -->
 
 
     <!-- ./advertising start -->
-    <section class="advertising">
+    <section class="advertising container">
+      <div class="advertising-image">
+        <img
+          src="./Images/oliver-pecker-HONJP8DyiSM-unsplash@2x.png"
+          alt="Antrepreneurs Elegant Complect Laptop, Mouse, Remote, Phones and Our Elegant Every Day to Ware Watch on Black Leather Desk Coverage"
+        >
+      </div>
 
+      <div class="advertising-text">
+        <h1 class="advertising-title">Watches for entrepreneurs</h1>
+        <div class="advertising-text">
+          <p>
+            But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I
+            will give you a complete account of the system, and expound the actual teachings of the great explorer of
+            the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself,
+            because.
+          </p>
+
+          <p>
+            But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I
+            will give you a complete account of the system, and expound the actual teachings of the great explorer of
+            the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself,
+            because.
+          </p>
+        </div>
+      </div>
     </section>
     <!-- ./advertising end -->
 
 
     <!-- ./catalog-men start -->
-    <section class="catalog-men">
+    <section
+      class="catalog-men container"
+      id="catalog-men"
+    >
+      <div class="separator"></div>
+      <header class="catalog-men-title">
+        <h1>Men's</h1>
+      </header>
 
+      <div class="catalog-men-tiles">
+        <ul>
+          <li>
+            <picture class="catalog-men-img">
+              <a
+                href="/"
+                title="heart"
+              >
+                <i class="fa-regular fa-heart"></i>
+              </a>
+
+              <img
+                src="./Images/Waches/WatchBlackSilver-Male-03 2@2x.png"
+                alt="Watch Black Silver Male"
+              >
+            </picture>
+
+            <h1 class="catalog-men-watch-name">
+              <a
+                href="/"
+                title="Monochrome Watch"
+              >Monochrome</a>
+            </h1>
+
+            <span class="price">
+              $425
+            </span>
+          </li>
+
+          <li>
+            <picture class="catalog-men-img">
+              <a
+                href="/"
+                title="heart"
+              >
+                <i class="fa-regular fa-heart"></i>
+              </a>
+
+              <img
+                src="./Images/Waches/WatchLightBlack-Male-01 2@2x.png"
+                alt="Watch Light Black Male"
+              >
+            </picture>
+
+            <h1 class="catalog-men-watch-name">
+              <a
+                href="/"
+                title="Monochrome Watch"
+              >Monochrome</a>
+            </h1>
+
+            <span class="price">
+              $425
+            </span>
+          </li>
+
+          <li>
+            <picture class="catalog-men-img">
+              <a
+                href="/"
+                title="heart"
+              >
+                <i class="fa-regular fa-heart"></i>
+              </a>
+
+              <img
+                src="./Images/Waches/WatchBlackMetal-Male-04 2@2x.png"
+                alt="Watch Black Metal Male"
+              >
+            </picture>
+
+            <h1 class="catalog-men-watch-name">
+              <a
+                href="/"
+                title="Monochrome Watch"
+              >Monochrome</a>
+            </h1>
+
+            <span class="price">
+              $425
+            </span>
+          </li>
+
+          <li>
+            <picture class="catalog-men-img">
+              <a
+                href="/"
+                title="heart"
+              >
+                <i class="fa-regular fa-heart"></i>
+              </a>
+
+              <img
+                src="./Images/Waches/WatchDarkBlack-Male-02 2@2x.png"
+                alt="Watch Dark Black Male"
+              >
+            </picture>
+
+            <h1 class="catalog-men-watch-name">
+              <a
+                href="/"
+                title="Monochrome Watch"
+              >Monochrome</a>
+            </h1>
+
+            <span class="price">
+              $425
+            </span>
+          </li>
+        </ul>
+      </div>
+
+      <footer class="cta">
+        <button
+          type="submit"
+          class="cta-btn"
+        >view all</button>
+      </footer>
     </section>
     <!-- ./catalog-men end -->
 
 
     <!-- ./catalog-women start -->
-    <section class="catalog-women">
+    <section
+      class="catalog-women container"
+      id="catalog-women"
+    >
+      <div class="separator"></div>
+      <header class="catalog-women-title">
+        <h1>Women's</h1>
+      </header>
 
+      <div class="catalog-women-tiles">
+        <ul>
+          <li>
+            <picture class="catalog-women-img">
+              <a
+                href="/"
+                title="heart"
+              >
+                <i class="fa-regular fa-heart"></i>
+              </a>
+
+              <img
+                src="./Images/Waches/WatchWhiteSquare-Female-01 2@2x.png"
+                alt="Watch White Square Female"
+              >
+            </picture>
+
+            <h1 class="catalog-women-watch-name">
+              <a
+                href="/"
+                title="Monochrome Watch"
+              >Monochrome</a>
+            </h1>
+
+            <span class="price">
+              $425
+            </span>
+          </li>
+
+          <li>
+            <picture class="catalog-women-img">
+              <a
+                href="/"
+                title="heart"
+              >
+                <i class="fa-regular fa-heart"></i>
+              </a>
+
+              <img
+                src="./Images/Waches/WatchDarkBlack-Male-02 2@2x.png"
+                alt="Watch Dark Black Male"
+              >
+            </picture>
+
+            <h1 class="catalog-women-watch-name">
+              <a
+                href="/"
+                title="Monochrome Watch"
+              >Monochrome</a>
+            </h1>
+
+            <span class="price">
+              $425
+            </span>
+          </li>
+
+          <li>
+            <picture class="catalog-women-img">
+              <a
+                href="/"
+                title="heart"
+              >
+                <i class="fa-regular fa-heart"></i>
+              </a>
+
+              <img
+                src="./Images/Waches/WatchWhiteRound-Female-02 2@2x.png"
+                alt="Watch White Round Female"
+              >
+            </picture>
+
+            <h1 class="catalog-women-watch-name">
+              <a
+                href="/"
+                title="Monochrome Watch"
+              >Monochrome</a>
+            </h1>
+
+            <span class="price">
+              $425
+            </span>
+          </li>
+
+          <li>
+            <picture class="catalog-women-img">
+              <a
+                href="/"
+                title="heart"
+              >
+                <i class="fa-regular fa-heart"></i>
+              </a>
+
+              <img
+                src="./Images/Waches/WatchBlackSilver-Male-03 2@2x.png"
+                alt="Watch Black Silver Male"
+              >
+            </picture>
+
+            <h1 class="catalog-women-watch-name">
+              <a
+                href="/"
+                title="Monochrome Watch"
+              >Monochrome</a>
+            </h1>
+
+            <span class="price">
+              $425
+            </span>
+          </li>
+        </ul>
+      </div>
+
+      <footer class="cta">
+        <button
+          type="submit"
+          class="cta-btn"
+        >view all</button>
+      </footer>
     </section>
     <!-- ./catalog-women end -->
   </main>
@@ -308,189 +748,193 @@
 
 
   <!-- ./footer start -->
-  <footer>
-    <!-- ./footer-support start -->
-    <div class="footer-support">
-      <ul>
-        <li>
-          <a
-            href="+44 (0)10 2345 6789"
-            title="Call Us"
-          >call us</a>
-        </li>
+  <footer class="footer">
+    <div class="footer-content container">
+      <!-- ./footer-support start -->
+      <div class="footer-support">
+        <ul>
+          <li>
+            <a
+              href="+44 (0)10 2345 6789"
+              title="Call Us"
+            >call us</a>
+          </li>
 
-        <li>
-          <a
-            href="+44 (0)10 2345 6789"
-            title="Call Us"
-          >+44 (0)10 2345 6789</a>
-        </li>
+          <li>
+            <a
+              href="+44 (0)10 2345 6789"
+              title="Call Us"
+            >+44 (0)10 2345 6789</a>
+          </li>
 
-        <li>
-          <a
-            href="/"
-            title="Email Customer Care"
-          >Email Customer Care</a>
-        </li>
+          <li>
+            <a
+              href="mailto:"
+              title="Email Customer Care"
+            >Email Customer Care</a>
+          </li>
 
-        <li>
-          <a
-            href="/"
-            title="See mobile version"
-          >See Mobile Version</a>
-        </li>
-      </ul>
+          <li>
+            <a
+              href="/"
+              title="See mobile version"
+            >See Mobile Version</a>
+          </li>
+        </ul>
+      </div>
+      <!-- ./footer-support end -->
+
+      <!-- ./footer-information start -->
+      <div class="footer-information">
+        <ul>
+          <li>
+            <a
+              href="/"
+              title="Style & Fit Advice"
+            >Style & Fit Advice</a>
+          </li>
+
+          <li>
+            <a
+              href="/"
+              title="faqs"
+            >faqs</a>
+          </li>
+
+          <li>
+            <a
+              href="/"
+              title="delivery"
+            >delivery</a>
+          </li>
+
+          <li>
+            <a
+              href="/"
+              title="exchange & returns"
+            >exchange & returns</a>
+          </li>
+
+          <li>
+            <a
+              href="/"
+              title="terms & conditions"
+            >terms & conditions</a>
+          </li>
+
+          <li>
+            <a
+              href="/"
+              title="privacy & cookies"
+            >privacy & cookies</a>
+          </li>
+        </ul>
+      </div>
+      <!-- ./footer-information end -->
+
+      <!-- ./footer-company-details start -->
+      <div class="footer-about-us">
+        <ul>
+          <li>
+            <a
+              href="/"
+              title="About Us"
+            >About Us</a>
+          </li>
+
+          <li>
+            <a
+              href="/"
+              title="Careers"
+            >Careers</a>
+          </li>
+
+          <li>
+            <a
+              href="/"
+              title="Affiliates"
+            >Affiliates</a>
+          </li>
+
+          <li>
+            <a
+              href="/"
+              title="Advertising"
+            >Advertising</a>
+          </li>
+        </ul>
+      </div>
+      <!-- ./footer-company-details end -->
+
+      <!-- ./footer-contact start-->
+      <div class="footer-media">
+        <p>Sign up for our newsletter</p>
+
+        <input
+          type="text"
+          id="SignUpNewsletter"
+          name="Sign Up Newsletter"
+          placeholder=""
+        >
+
+        <button
+          type="submit"
+          title="Submit"
+          class="Button-SignUp-Newsletter"
+        >Submit</button>
+
+        <ul class="footer-media-social">
+          <li>
+            <a
+              href="/"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="YouTube"
+            >
+              <i class="fa-brands fa-youtube"></i>
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="/"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="Twitter"
+            >
+              <i class="fa-brands fa-twitter"></i>
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="https://facebook.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="Facebook"
+            >
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="/"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="Instagram"
+            >
+              <i class="fa-brands fa-square-instagram"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!-- ./footer-contact end-->
     </div>
-    <!-- ./footer-support end -->
-
-    <!-- ./footer-information start -->
-    <div class="footer-information">
-      <ul>
-        <li>
-          <a
-            href="/"
-            title="Style & Fit Advice"
-          >Style & Fit Advice</a>
-        </li>
-
-        <li>
-          <a
-            href="/"
-            title="faqs"
-          >faqs</a>
-        </li>
-
-        <li>
-          <a
-            href="/"
-            title="delivery"
-          >delivery</a>
-        </li>
-
-        <li>
-          <a
-            href="/"
-            title="exchange & returns"
-          >exchange & returns</a>
-        </li>
-
-        <li>
-          <a
-            href="/"
-            title="terms & conditions"
-          >terms & conditions</a>
-        </li>
-
-        <li>
-          <a
-            href="/"
-            title="privacy & cookies"
-          >privacy & cookies</a>
-        </li>
-      </ul>
-    </div>
-    <!-- ./footer-information end -->
-
-    <!-- ./footer-company-details start -->
-    <div class="footer-details">
-      <ul>
-        <li>
-          <a
-            href="/"
-            title="About Us"
-          >About Us</a>
-        </li>
-
-        <li>
-          <a
-            href="/"
-            title="Careers"
-          >Careers</a>
-        </li>
-
-        <li>
-          <a
-            href="/"
-            title="Affiliates"
-          >Affiliates</a>
-        </li>
-
-        <li>
-          <a
-            href="/"
-            title="Advertising"
-          >Advertising</a>
-        </li>
-      </ul>
-    </div>
-    <!-- ./footer-company-details end -->
-
-    <!-- ./footer-contact start-->
-    <div class="footer-details">
-      <p>Sign up for our newsletter</p>
-
-      <input
-        type="text"
-        id="SignUpNewsletter"
-        name="Sign Up Newsletter"
-        placeholder=""
-      >
-
-      <button
-        type="submit"
-        title="Submit"
-        class="Button-SignUp-Newsletter"
-      >Submit</button>
-
-      <ul class="footer-contact-social">
-        <li>
-          <a
-            href="/"
-            target="_blank"
-            rel="noopener noreferrer"
-            title="YouTube"
-          >
-            <i class="fa-brands fa-youtube"></i>
-          </a>
-        </li>
-
-        <li>
-          <a
-            href="/"
-            target="_blank"
-            rel="noopener noreferrer"
-            title="Twitter"
-          >
-            <i class="fa-brands fa-twitter"></i>
-          </a>
-        </li>
-
-        <li>
-          <a
-            href="/"
-            target="_blank"
-            rel="noopener noreferrer"
-            title="Facebook"
-          >
-            <i class="fa-brands fa-facebook-f"></i>
-          </a>
-        </li>
-
-        <li>
-          <a
-            href="/"
-            target="_blank"
-            rel="noopener noreferrer"
-            title="Instagram"
-          >
-            <i class="fa-brands fa-square-instagram"></i>
-          </a>
-        </li>
-      </ul>
-    </div>
-    <!-- ./footer-contact end-->
   </footer>
   <!-- ./footer end -->
+
+
 </body>
 
 </html>

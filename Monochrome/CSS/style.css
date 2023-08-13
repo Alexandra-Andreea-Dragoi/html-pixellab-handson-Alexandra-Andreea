@@ -241,8 +241,8 @@ table {
 
 @font-face {
   font-family: 'Playfair Display';
-  src: url('PlayfairDisplay-Regular.woff2') format('woff2'),
-    url('PlayfairDisplay-Regular.woff') format('woff');
+  src: url('../fonts/PlayfairDisplay-Regular.woff2') format('woff2'),
+    url('../fonts/PlayfairDisplay-Regular.woff') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -250,8 +250,8 @@ table {
 
 @font-face {
   font-family: 'Playfair Display';
-  src: url('PlayfairDisplay-Italic.woff2') format('woff2'),
-    url('PlayfairDisplay-Italic.woff') format('woff');
+  src: url('../fonts/PlayfairDisplay-Italic.woff2') format('woff2'),
+    url('../fonts/PlayfairDisplay-Italic.woff') format('woff');
   font-weight: normal;
   font-style: italic;
   font-display: swap;
@@ -259,13 +259,13 @@ table {
 /* fonts end */
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Playfair Display', serif;
   font-size: 22px;
   color: #2b2b2b;
 }
 
 h1 {
-  font-family: 'PlayfairDisplay-Regular', sans-serif;
+  font-family: 'Playfair Display', serif;
   font-size: 40px;
   display: flex;
   justify-content: center;
@@ -274,7 +274,7 @@ h1 {
 
 a {
   text-decoration: none;
-  font-family: 'PlayfairDisplay-Regular', sans-serif;
+  font-family: 'Playfair Display', serif;
   color: #2b2b2b;
 }
 
@@ -287,7 +287,7 @@ a:hover {
 }
 
 span {
-  font-family: 'PlayfairDisplay-Regular', sans-serif;
+  font-family: 'Playfair Display', serif;
   font-weight: 500;
   font-size: 24px;
 }
@@ -308,13 +308,14 @@ span {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin-top: 40px;
+  margin: 40px 0;
 }
 
 .cta-btn {
   font-size: 22px;
   background: transparent;
   padding: 16px 24px;
+  border: 1px solid black;
 }
 
 .cta-btn:hover {
@@ -327,68 +328,76 @@ span {
   background: transparent url(../Images/banner.png) no-repeat center center /
     cover;
   height: 700px;
+  padding-top: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-.header .header-main {
+.header .header-secondary {
   display: flex;
   justify-content: space-between;
 }
 
-.header .header-main .header-main-contact ul,
-.header .header-main .header-main-controls ul {
+.header .header-secondary .header-secondary-connect ul,
+.header .header-secondary .header-secondary-controls ul {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 400px;
-  margin-top: 38px;
+  gap: 20px;
+  align-items: center;
 }
 
-.header .header-main .header-main-contact li > a,
-.header .header-main .header-main-controls li > a {
+.header .header-secondary .header-secondary-connect li > a,
+.header .header-secondary .header-secondary-controls li > a {
   font-family: 'PlayfairDisplay-Regular', sans-serif;
   font-weight: 500;
 }
 
-.header .header-main .header-main-contact li > a {
+.header .header-secondary .header-secondary-connect li > a {
   color: #fff;
   font-size: 16px;
 }
 
-.header .header-main .header-main-controls li > a {
+.header .header-secondary .header-secondary-controls li > a {
   color: #111;
 }
 
-.header-main .header-main-search {
+.header-secondary .header-secondary-search {
   border: 1px solid #111;
   padding: 4px 6px;
 }
 
-.header-main .header-main-search i {
+.header-secondary .header-secondary-search i {
   font-size: 18px;
 }
 
-.header-main .header-main-search input {
+.header-secondary .header-secondary-search button {
+  border: none;
+  background-color: transparent;
+}
+
+.header-secondary .header-secondary-search input {
   border: transparent;
   font-size: 18px;
   line-height: 20px;
 }
-/* Header End */
 
 /* Menu Start */
-.menu {
+.header-primary {
   background: #2b2b2b;
 }
 
-.menu .menu-items ul {
+.header-primary .header-primary-items ul {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   padding: 10px 0;
 }
 
-.menu .menu-items ul > li > a {
+.header-primary .header-primary-items ul > li > a {
   color: #fff;
-  font-family: 'PlayfairDisplay-Regular', sans-serif;
+  font-family: 'Playfair Display', serif;
   text-transform: uppercase;
   font-weight: 100;
   font-size: 18px;
@@ -396,73 +405,74 @@ span {
 }
 /* Menu End */
 
+/* Header End */
+
 /* Main Start */
 
-/* Catalog New Stuff and Most Loved start */
-.catalog-new-stuff-tiles ul,
-.catalog-most-loved-tiles ul {
+/* home-catalog-preview start */
+.home-catalog-preview {
+  border-top: 1px solid black;
   margin-top: 40px;
+}
+
+.home-catalog-preview-title {
+  padding: 40px 0;
+}
+
+.home-catalog-preview-tiles ul {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
-.catalog-new-stuff-tiles li,
-.catalog-most-loved-tiles li {
+.home-catalog-preview-tiles li article {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 24px;
 }
 
-.catalog-new-stuff-img img,
-.catalog-most-loved-img img {
+.home-catalog-preview-img a img {
   width: 310px;
   height: 292px;
 }
 
-.catalog-new-stuff-watch-name,
-.catalog-most-loved-watch-name {
+.home-catalog-preview-watch-name {
   text-transform: uppercase;
-  font-family: 'PlayfairDisplay-Regular', sans-serif;
+  font-family: 'Playfair Display', serif;
   font-size: 24px;
   font-weight: 500;
-  margin-top: 24px;
 }
 
-.catalog-new-stuff-tiles ul span,
-.catalog-most-loved-tiles ul span {
-  margin-top: 24px;
-}
-
-.catalog-new-stuff-img,
-.catalog-most-loved-img {
+.home-catalog-preview-img {
   position: relative;
 }
 
-.catalog-new-stuff-img .fa-regular,
-.catalog-most-loved-img .fa-regular {
+.home-catalog-preview-img .wishlist {
   position: absolute;
   z-index: 1;
-  top: 10%;
-  right: 10%;
+  top: 10px;
+  right: 10px;
+}
+
+.home-catalog-preview-img i {
   color: #b5b4b4;
 }
 
-.catalog-new-stuff-img i:hover,
-.catalog-most-loved-img i:hover {
+.home-catalog-preview-img i:hover {
   scale: 1.2;
   color: rgb(0, 0, 0);
 }
 
-.catalog-new-stuff-img img:hover,
-.catalog-most-loved-img img:hover {
+.home-catalog-preview-img img:hover {
   scale: 1.1;
 }
-/* Catalog New Stuff and Most Loved end */
+/* home-catalog-preview end */
 
 /* Avertising start */
 .advertising {
   margin-top: 120px;
+  margin-bottom: 120px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -487,78 +497,12 @@ span {
 }
 
 .advertising-text p {
+  font-family: 'Roboto' sans-serif;
   font-weight: 300;
   line-height: 40px;
   text-align: justify;
 }
 /* Advertisisng end */
-
-/* Catalog Men and Women start */
-.catalog-men-title h1,
-.catalog-women-title h1 {
-  text-transform: uppercase;
-}
-
-.catalog-men-tiles ul,
-.catalog-women-tiles ul {
-  margin-top: 40px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.catalog-men-tiles li,
-.catalog-women-tiles li {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.catalog-men-img img,
-.catalog-women-img img {
-  width: 310px;
-  height: 292px;
-}
-
-.catalog-men-watch-name,
-.catalog-women-watch-name {
-  text-transform: uppercase;
-  font-family: 'PlayfairDisplay-Regular', sans-serif;
-  font-size: 24px;
-  font-weight: 500;
-  margin-top: 24px;
-}
-
-.catalog-men-tiles ul span,
-.catalog-women-tiles ul span {
-  margin-top: 24px;
-}
-
-.catalog-men-img,
-.catalog-women-img {
-  position: relative;
-}
-
-.catalog-men-img .fa-regular,
-.catalog-women-img .fa-regular {
-  position: absolute;
-  z-index: 1;
-  top: 10%;
-  right: 10%;
-  color: #b5b4b4;
-}
-
-.catalog-men-img i:hover,
-.catalog-women-img i:hover {
-  scale: 1.2;
-  color: rgb(0, 0, 0);
-}
-
-.catalog-men-img img:hover,
-.catalog-women-img img:hover {
-  scale: 1.1;
-}
-/* Catalog Men and Women end */
 
 /* Main End */
 
@@ -573,34 +517,45 @@ span {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  font-family: 'PlayfairDisplay-Regular', sans-serif;
+  font-family: 'Playfair Display', serif;
 }
 
-.footer-support,
-.footer-information,
-.footer-about-us,
-.footer-media {
-  line-height: 40px;
+.footer-support li,
+.footer-nav li {
+  margin-bottom: 20px;
 }
 
-/* Footer Media Start */
-.footer-media {
+/* Footer Connect Start */
+.footer-connect {
   display: flex;
   flex-direction: column;
   align-items: start;
-  gap: 10px;
+  gap: 20px;
 }
 
-.footer-media .footer-media-social {
+.sign-up-newsletter {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footer-connect .sign-up-newsletter input {
+  height: 30px;
+  padding: 0 5px;
+}
+
+.sign-up-btn {
+  width: 100px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.footer-connect .footer-connect-social {
   display: flex;
   flex-direction: row;
   gap: 20px;
 }
 
-.footer-media input {
-  width: 100%;
-}
-
-/* Footer Media End */
+/* Footer Connect End */
 
 /* Footer End */

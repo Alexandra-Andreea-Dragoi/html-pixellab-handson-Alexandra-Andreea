@@ -294,7 +294,7 @@ span {
 
 .container {
   width: 100%;
-  max-width: 1366px;
+  max-width: 1600px;
   margin: 0 auto;
 }
 
@@ -327,7 +327,7 @@ span {
 .header {
   background: transparent url(../Images/banner.png) no-repeat center center /
     cover;
-  height: 700px;
+  height: 500px;
   padding-top: 40px;
   display: flex;
   flex-direction: column;
@@ -336,7 +336,8 @@ span {
 
 .header .header-secondary {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
+  padding: 0 100px;
 }
 
 .header .header-secondary .header-secondary-connect ul,
@@ -433,7 +434,7 @@ span {
 }
 
 .home-catalog-preview-img a img {
-  width: 310px;
+  width: 321px;
   height: 292px;
 }
 
@@ -465,7 +466,9 @@ span {
 }
 
 .home-catalog-preview-img img:hover {
-  scale: 1.1;
+  /* scale: 1.1; */
+  transform: scale(1.1);
+  transition: 1s ease-in-out;
 }
 /* home-catalog-preview end */
 
@@ -497,7 +500,7 @@ span {
 }
 
 .advertising-text p {
-  font-family: 'Roboto' sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 300;
   line-height: 40px;
   text-align: justify;
